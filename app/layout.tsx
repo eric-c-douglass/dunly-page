@@ -18,10 +18,10 @@ export const metadata: Metadata = {
   keywords: ["Task Management", "iOS App", "Productivity", "Habits", "Organization", "To-Do List", "Recurring Tasks"],
   icons: {
     icon: [
-      { url: '/images/logo/DunlyLogo.png' },
+      { url: './images/logo/DunlyLogo.png' },
     ],
     apple: [
-      { url: '/images/logo/DunlyLogo.png' },
+      { url: './images/logo/DunlyLogo.png' },
     ],
   },
 };
