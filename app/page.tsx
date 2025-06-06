@@ -7,7 +7,7 @@ export default function Home() {
         {/* Logo */}
         <div className="flex justify-center mb-16">
           <Image
-            src="/images/logo/DunlyLogo.png"
+            src={`${process.env.NODE_ENV === 'production' ? '/Dunly-Page' : ''}/images/logo/DunlyLogo.png`}
             alt="Dunly Logo"
             width={120}
             height={120}
