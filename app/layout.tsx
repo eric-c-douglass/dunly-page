@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Dunly - Task Management, Simplified",
-  description: "Meet Dunly, your intelligent companion for managing both recurring responsibilities and one-time tasks. With its thoughtfully designed interface, Dunly helps you stay on top of your routines while maintaining the flexibility to handle special projects.",
+  description: "Dunly helps you get more done daily with smart scheduling, clean design, and just the right amount of structure. Dunly helps you stay on top of your routines while maintaining the flexibility to handle special projects.",
   keywords: ["Task Management", "iOS App", "Productivity", "Habits", "Organization", "To-Do List", "Recurring Tasks"],
   icons: {
     icon: [

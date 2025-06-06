@@ -25,7 +25,7 @@ export default function Home() {
             Task Management, Simplified
           </h3>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
-            Meet Dunly, your intelligent companion for managing both recurring responsibilities and one-time tasks.
+          Dunly helps you get more done daily with smart scheduling, clean design, and just the right amount of structure. Dunly helps you stay on top of your routines while maintaining the flexibility to handle special projects.
           </p>
         </div>
 
