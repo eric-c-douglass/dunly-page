@@ -2,102 +2,98 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-black">
+      <div className="w-full max-w-[800px] mx-auto px-4 sm:px-6 py-16 sm:py-24">
+        {/* Logo */}
+        <div className="flex justify-center mb-16">
+          <Image
+            src="/images/logo/DunlyLogo.png"
+            alt="Dunly Logo"
+            width={120}
+            height={120}
+            priority
+            className="dark:brightness-200"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Hero Section */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            Task Management, Simplified
+          </h1>
+          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
+            Meet Dunly, your intelligent companion for managing both recurring responsibilities and one-time tasks.
+          </p>
+        </div>
+
+        {/* Key Features Section */}
+        <div className="w-full max-w-[1000px] mx-auto mb-16">
+          <div className="space-y-6">
+            <FeatureCard
+              title="Smart Task Management"
+              description="Seamlessly handle both recurring and one-time tasks with intelligent urgency calculation and visual progress tracking."
+              icon="📋"
+            />
+            <FeatureCard
+              title="Flexible Recurring Tasks"
+              description="Set custom frequencies from daily to yearly, track completion history, and enjoy automatic scheduling of next due dates."
+              icon="🔄"
+            />
+            <FeatureCard
+              title="Intuitive Organization"
+              description="Filter tasks by custom categories, view tasks due today or upcoming, and sort by urgency to focus on what matters most."
+              icon="📱"
+            />
+          </div>
+        </div>
+
+        {/* Use Cases Section */}
+        <div className="mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-8">
+            Perfect for Every Task
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-lg">
+            <UseCaseTag emoji="📅" text="Daily chores" />
+            <UseCaseTag emoji="🏋️" text="Exercise routines" />
+            <UseCaseTag emoji="💊" text="Medication" />
+            <UseCaseTag emoji="🌱" text="Plant care" />
+            <UseCaseTag emoji="🚗" text="Vehicle maintenance" />
+            <UseCaseTag emoji="📝" text="Project deadlines" />
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        {/* <div className="text-center max-w-sm mx-auto">
+          <a
+            href="#" // Replace with actual App Store link
+            className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full"
+          >
+            Download on the App Store
+          </a>
+          <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+            Coming soon to the iOS App Store
+          </p>
+        </div> */}
+      </div>
+    </div>
+  );
+}
+
+function FeatureCard({ title, description, icon }: { title: string; description: string; icon: string }) {
+  return (
+    <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm w-full">
+      <div className="text-3xl mb-3">{icon}</div>
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{title}</h3>
+      <p className="text-sm text-gray-600 dark:text-gray-300">{description}</p>
+    </div>
+  );
+}
+
+function UseCaseTag({ emoji, text }: { emoji: string; text: string }) {
+  return (
+    <div className="flex items-center gap-2 bg-gray-100 dark:bg-gray-800 px-3 py-2 rounded-full">
+      <span>{emoji}</span>
+      <span className="text-xs sm:text-sm text-gray-700 dark:text-gray-300">{text}</span>
     </div>
   );
 }
