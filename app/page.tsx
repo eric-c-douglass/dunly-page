@@ -19,8 +19,11 @@ export default function Home() {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Task Management, Simplified
+            Dunly
           </h1>
+          <h3 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            Task Management, Simplified
+          </h3>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
             Meet Dunly, your intelligent companion for managing both recurring responsibilities and one-time tasks.
           </p>
