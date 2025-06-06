@@ -7,7 +7,7 @@ export default function Home() {
         {/* Logo */}
         <div className="flex justify-center mb-16">
           <Image
-            src="/images/logo/DunlyLogo.png"
+            src="./images/logo/DunlyLogo.png"
             alt="Dunly Logo"
             width={120}
             height={120}
